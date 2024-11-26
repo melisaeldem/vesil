@@ -223,6 +223,24 @@ a {
   transition: 0.2s;
 }
 
+.green-button {
+  display: flex;
+  max-width: 100%;
+  padding: 16px 24px;
+  color: var(--white);
+  text-decoration: none;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: var(--Radius-L, 16px);
+  background-color: var(--green);
+  cursor: pointer;
+}
+.green-button:hover {
+  background-color: var(--primary-hover-color);
+  transition: 0.2s;
+}
+
 .outline-button {
   display: inline-flex;
   width: 100%;
@@ -266,7 +284,7 @@ a {
 
 #theme-switch {
   display: flex;
-  width: 343px;
+  width: 100%;
   max-width: 100%;
   padding: 16px 24px;
   color: var(--white);
@@ -298,6 +316,10 @@ svg {
 }
 
 .darkmode .text-purple {
+  color: var(--white);
+}
+
+.darkmode .filter-text {
   color: var(--white);
 }
 
@@ -455,6 +477,7 @@ svg {
 .nav-tabs .nav-link.active {
   border: none;
   border-bottom: 2px solid var(--primary-color);
+  background-color: transparent !important;
   color: var(--black) !important;
 }
 
@@ -471,6 +494,11 @@ svg {
 .filter-serach {
   padding-bottom: 10px;
   border-bottom: 1px solid var(--filter-border) !important;
+}
+
+.product-type-filter {
+  padding-bottom: 10px;
+  border-top: 1px solid var(--filter-border) !important;
 }
 
 .add-card .card-body.green-border {
@@ -503,4 +531,86 @@ svg {
 .btn-checks + .btn {
   padding: 10px;
   border: 1px solid var(--gray) !important;
+}
+
+.badge {
+  border-radius: 90px;
+  background: var(--badge-bg, #f3f3f3);
+  padding: 5px;
+  color: var(--black);
+}
+
+.darkmode .badge {
+  color: var(--white);
+}
+
+.product-title {
+  border-bottom: 1px solid var(--filter-border);
+  padding-bottom: 10px;
+}
+
+.profile-select {
+  width: 30px;
+  display: inline-block !important;
+  align-items: end !important;
+  text-align: end !important;
+  --bs-form-select-bg-img: none;
+}
+.profile-select.form-select {
+  padding: 0;
+  border: none;
+}
+.profile-select.form-select:focus {
+  box-shadow: none !important;
+}
+
+.top-bottom-border {
+  padding: 10px 0px;
+  border-top: 1px solid var(--filter-border);
+  border-bottom: 1px solid var(--filter-border);
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  background-color: #f9f9f9;
+  border-radius: 16px;
+  padding: 10px 15px;
+  height: 52px !important;
+}
+
+.search-box i {
+  font-size: 18px;
+  color: var(--filter-border);
+  margin-right: 10px;
+}
+
+.search-box input {
+  border: none;
+  outline: none;
+  font-size: 16px;
+  color: #333;
+  width: 100%;
+  background: transparent;
+}
+
+.search-box input::placeholder {
+  color: var(--gray);
+}
+
+.purple-circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #7f59f1;
+}
+
+.search-list {
+  border-bottom: 1px solid var(--filter-border);
+  padding-bottom: 10px;
+}
+
+.title-comp {
+  border-bottom: 1px solid var(--filter-border);
+  padding-bottom: 10px;
 }

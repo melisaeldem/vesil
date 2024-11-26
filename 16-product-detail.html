@@ -38,11 +38,11 @@
     <link href="path/to/lightbox.css" rel="stylesheet" />
 </head>
 
-<body>
+<body class="">
 
-    <div class="container d-lg-none d-flex px-0">
+    <div class="container d-lg-none d-flex px-0 overflow-hidden">
         <div class="w-100  d-flex flex-column" style="min-height: 100vh;">
-            <div class="row ">
+            <div class="row">
                 <div class="owl-carousel owl-theme">
                     <a href="./assets/img/tshirt.png" data-lightbox="my-gallery">
                         <img src="./assets/img/tshirt.png" alt="Image 1">
@@ -56,14 +56,118 @@
                 </div>
 
                 <div>
-                    <div class="product-title px-4 mt-3">
-                        <div class="d-flex align-items-center ">
-                            <a href="" class="text-decoration-none fs-22 fw-500"><img class="me-3" src="./assets/img/company-logo.png" alt="company title">Mert Kumaş</a>
+                    <div class="company-title mt-3">
+                        <div class="d-flex align-items-center justify-content-between px-4">
+                            <a href="" class="text-decoration-none fs-22 fw-500"><img class="me-3"
+                                    src="./assets/img/company-logo.png" alt="company title">Mert Kumaş</a>
+                            <p class="badge m-0  fs-12 fw-400"><svg class="me-1" xmlns="http://www.w3.org/2000/svg"
+                                    width="12" height="14" viewBox="0 0 12 14" fill="none">
+                                    <path
+                                        d="M10.8182 5.90909C10.8182 9.72727 5.90909 13 5.90909 13C5.90909 13 1 9.72727 1 5.90909C1 4.60712 1.51721 3.35847 2.43784 2.43784C3.35847 1.51721 4.60712 1 5.90909 1C7.21106 1 8.45971 1.51721 9.38034 2.43784C10.301 3.35847 10.8182 4.60712 10.8182 5.90909Z"
+                                        stroke="#333333" stroke-opacity="0.7" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path
+                                        d="M5.90882 7.54543C6.81256 7.54543 7.54519 6.81281 7.54519 5.90907C7.54519 5.00533 6.81256 4.27271 5.90882 4.27271C5.00509 4.27271 4.27246 5.00533 4.27246 5.90907C4.27246 6.81281 5.00509 7.54543 5.90882 7.54543Z"
+                                        stroke="#333333" stroke-opacity="0.7" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>İstanbul</p>
                         </div>
                     </div>
-                    
+                    <div class="d-flex align-items-center justify-content-between px-4">
+                        <div class="product-title mt-3">
+                            <p class="m-0 p-0 fs-22 fw-500">Ürün İsmi Ürün İsmi Ürün İsmi Ürün İsmi</p>
+                        </div>
+                        <select class="profile-select form-select  form-select-lg " aria-label="Large select example">
+                            <option selected>...</option>
+                            <option value="1">Profili Gör</option>
+                            <option value="2" class="text-danger">Şikayet Et</option>
+                        </select>
+                    </div>
+                    <div class="accordion  mt-4 accordion-company-select " id="accordionExample">
+                        <div class="accordion-item border-0">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button fs-20 fw-500" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Detay
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <p class="p-0 m-0 fs-16 fw-500">Fiyat:</p>
+                                        <span class="text-green fs-14 fw-500">22.222₺</span>
+                                    </div>
+                                    <p class="p-0 m-0 fw-400 fs-16 mt-3">Depodan depoya teslim uygun taksitlendirme
+                                        seçenekli istenilen
+                                        ölçüde kesilebilir rulo ve kesilmiş çelik ürünleri. Sipariş üzerine farklı
+                                        ölçütlerde de sağlanır.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item border-0">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fs-16 fw-500" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+                                    aria-controls="collapseTwo">
+                                    Özellikler
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapsey"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <div class="top-bottom-border">
+                                        <div class="d-flex align-items-center justify-content-between">
+                                            <p class="m-0 p-0 fs-16 fw-500">Uzunluk:</p>
+                                            <p class="m-0 p-0 fs-14 fw-500">2,000mm / 6,000mm, 12,000mm</p>
+                                        </div>
+                                    </div>
+                                    <div class="top-bottom-border">
+                                        <div class="d-flex align-items-center justify-content-between">
+                                            <p class="m-0 p-0 fs-16 fw-500">En:</p>
+                                            <p class="m-0 p-0 fs-14 fw-500">1,000 mm / 1500 mm / 2,000 mm/ 2,600</p>
+                                        </div>
+                                    </div>
+                                    <div class="top-bottom-border">
+                                        <div class="d-flex align-items-center justify-content-between">
+                                            <p class="m-0 p-0 fs-16 fw-500">Kalınlık:</p>
+                                            <p class="m-0 p-0 fs-14 fw-500">4 mm / 8 mm / 10 mm</p>
+                                        </div>
+                                    </div>
+                                    <div class="top-bottom-border">
+                                        <div class="d-flex align-items-center justify-content-between">
+                                            <p class="m-0 p-0 fs-16 fw-500">Kalite:</p>
+                                            <p class="m-0 p-0 fs-14 fw-500">Kalite / 2. Kalite</p>
+                                        </div>
+                                    </div>
+                                    <div class="top-bottom-border">
+                                        <div class="d-flex align-items-center justify-content-between">
+                                            <p class="m-0 p-0 fs-16 fw-500">Boya:</p>
+                                            <p class="m-0 p-0 fs-14 fw-500">Boyalı / Boyasız</p>
+                                        </div>
+                                    </div>
+                                    <div class="top-bottom-border">
+                                        <div class="d-flex align-items-center justify-content-between">
+                                            <p class="m-0 p-0 fs-16 fw-500">Ağırlık:</p>
+                                            <p class="m-0 p-0 fs-14 fw-500">43 Kg</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
 
+                <div class="d-flex align-items-center justify-content-center">
+                    <a href=""  class="text-decoration-none green-button border-0 position-fixed" style="bottom: 20px;  width: 90%;"><svg
+                            xmlns="http://www.w3.org/2000/svg" width="19" height="17" viewBox="0 0 22 21" fill="none">
+                            <path
+                                d="M13.1697 19.3904C17.3537 19.1134 20.6857 15.7334 20.9597 11.4904C21.0127 10.6604 21.0127 9.80042 20.9597 8.97042C20.6857 4.72842 17.3537 1.35042 13.1697 1.07142C11.7246 0.976192 10.2748 0.976192 8.82973 1.07142C4.64573 1.34942 1.31373 4.72842 1.03973 8.97142C0.986757 9.81059 0.986757 10.6523 1.03973 11.4914C1.13973 13.0364 1.82273 14.4674 2.62773 15.6754C3.09473 16.5204 2.78673 17.5754 2.29973 18.4984C1.94973 19.1634 1.77373 19.4954 1.91473 19.7354C2.05473 19.9754 2.36973 19.9834 2.99873 19.9984C4.24373 20.0284 5.08273 19.6764 5.74873 19.1854C6.12573 18.9064 6.31473 18.7674 6.44473 18.7514C6.57473 18.7354 6.83173 18.8414 7.34373 19.0514C7.80373 19.2414 8.33873 19.3584 8.82873 19.3914C10.2537 19.4854 11.7427 19.4854 13.1707 19.3914M10.9947 10.5004H11.0047M14.9907 10.5004H14.9997M6.99973 10.5004H7.00873"
+                                stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>Mesaj
+                        Gönder</a>
+                </div>
             </div>
 
 
