@@ -38,38 +38,52 @@
 </head>
 
 <body>
-    <div class="container d-lg-none d-flex px-0">
-        <div class="bg-purple p-splash-mode d-flex flex-column" style="min-height: 100vh;">
-            <div class="row flex-grow-1">
-                <a href="3-darkmode.html" class="text-decoration-none d-flex align-items-center gap-2">
-                    <i class="fa-solid fa-arrow-left"></i>
-                    <p key="4" class=" m-0 p-0 text-decoration-none" href="3-darkmode.html"></p>
-                </a>
-                <div class="col-12 text-center">
+    <div class="loader-wrapper">
+        <div class="loader"></div>
+    </div>
+    <div class="d-flex px-0 container custom-container">
+        <!-- BACK BUTTON -->
+        <a href="3-darkmode.html"
+            class="animate fs-16 fw-500 back-button text-decoration-none d-flex align-items-center gap-1 text-dark-gray">
+            <i class="fa-solid fa-arrow-left"></i>
+            Geri Dön</a>
+        <!-- BACK BUTTON -->
+        <div class="bg-purple p-splash  page-wrapper">
+
+            <!-- IMAGE & TEXT -->
+            <div class="image-text-contenth">
+                <div class="animate-1 d-flex align-items-center justify-content-center mb-5">
                     <svg width="186" height="186" viewBox="0 0 186 186" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect width="186" height="186" rx="12" fill="#5A4083" fill-opacity="0.5" />
+                        <rect width="186" height="186" rx="12" fill="#e9631c80" fill-opacity="0.5" />
                         <path
                             d="M97.7586 136.933C106.977 125.367 128 97.3349 128 81.5895C128 62.4932 112.547 47 93.5 47C74.4531 47 59 62.4932 59 81.5895C59 97.3349 80.0234 125.367 89.2414 136.933C91.4516 139.689 95.5484 139.689 97.7586 136.933ZM93.5 70.0597C96.55 70.0597 99.4751 71.2744 101.632 73.4367C103.788 75.5989 105 78.5316 105 81.5895C105 84.6474 103.788 87.5801 101.632 89.7423C99.4751 91.9046 96.55 93.1194 93.5 93.1194C90.45 93.1194 87.5249 91.9046 85.3683 89.7423C83.2116 87.5801 82 84.6474 82 81.5895C82 78.5316 83.2116 75.5989 85.3683 73.4367C87.5249 71.2744 90.45 70.0597 93.5 70.0597Z"
-                            fill="currentColor" fill-opacity="0.7" />
+                            fill="currenColor" fill-opacity="0.7" />
                     </svg>
 
+                </div>
+                <p class="m-0 p-0 fs-26 fw-500 text-center mb-3 animate" key="7"></p>
+                <p class="m-0 p-0 fs-14 fw-400 text-center animate" key="8"></p>
+            </div>
+            <!-- IMAGE & TEXT -->
 
-                    <p key="7" class="m-0 p-0 fw-500 fs-26 mt-50"></p>
-                    <p key="8" class="m-0 p-0 fs-14 fw-400 mt-20"></p>
+            <!--  BUTTON -->
+            <div class="splash-buttonsh">
+                <a href="5-login-splash.html" class="animate text-decoration-none purple-button btn border-0 mt-4"
+                    key="9"></a>
+                <div class="d-flex align-items-center justify-content-center mt-4">
+                    <a href="5-login-splash.html" class="animate border-0 text-center text-purple fs-16 fw-500"
+                        key="10"></a>
                 </div>
             </div>
+            <!--  BUTTON -->
 
-            <div class="row mb-5">
-                <div class="col-12">
-                    <a key="9"  href="5-login-splash.html"  class="purple-button text-center"></a>
-                    <a key="10" href="5-login-splash.html" class=" mt-4 text-purple d-flex align-items-center justify-content-center mt-3"></a>
-                </div>
-            </div>
+
+
         </div>
+
     </div>
 
-
-
+    
     <!-- jquery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
         integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
@@ -83,11 +97,15 @@
     <script src="https://cdn.jsdelivr.net/npm/i18next@21.6.3/i18next.min.js"></script>
 
     <!-- main js -->
-    <script src="assets/js/app.js"></script>
     <!-- main js -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://unpkg.com/@barba/core"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
+    <script src="assets/js/app.js"></script>
+
 </body>
 
 </html>

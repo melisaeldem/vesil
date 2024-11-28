@@ -37,10 +37,12 @@
     <!-- css -->
     <link href="path/to/lightbox.css" rel="stylesheet" />
 </head>
-
+<div class="loader-wrapper">
+    <div class="loader"></div>
+</div>
 <body class="">
 
-    <div class="container d-lg-none d-flex px-0 overflow-hidden">
+    <div class="container-xs container-fluid d-lg-none d-flex px-0 overflow-hidden">
         <div class="w-100  d-flex flex-column" style="min-height: 100vh;">
             <div class="row">
                 <div class="owl-carousel owl-theme">
@@ -64,11 +66,11 @@
                                     width="12" height="14" viewBox="0 0 12 14" fill="none">
                                     <path
                                         d="M10.8182 5.90909C10.8182 9.72727 5.90909 13 5.90909 13C5.90909 13 1 9.72727 1 5.90909C1 4.60712 1.51721 3.35847 2.43784 2.43784C3.35847 1.51721 4.60712 1 5.90909 1C7.21106 1 8.45971 1.51721 9.38034 2.43784C10.301 3.35847 10.8182 4.60712 10.8182 5.90909Z"
-                                        stroke="#333333" stroke-opacity="0.7" stroke-linecap="round"
+                                        stroke="currenColor" stroke-opacity="0.7" stroke-linecap="round"
                                         stroke-linejoin="round" />
                                     <path
                                         d="M5.90882 7.54543C6.81256 7.54543 7.54519 6.81281 7.54519 5.90907C7.54519 5.00533 6.81256 4.27271 5.90882 4.27271C5.00509 4.27271 4.27246 5.00533 4.27246 5.90907C4.27246 6.81281 5.00509 7.54543 5.90882 7.54543Z"
-                                        stroke="#333333" stroke-opacity="0.7" stroke-linecap="round"
+                                        stroke="currenColor" stroke-opacity="0.7" stroke-linecap="round"
                                         stroke-linejoin="round" />
                                 </svg>İstanbul</p>
                         </div>
@@ -204,10 +206,10 @@
                     items: 1
                 },
                 600: {
-                    items: 3
+                    items: 1
                 },
                 1000: {
-                    items: 5
+                    items: 1
                 }
             }
         })

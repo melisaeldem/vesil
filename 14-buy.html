@@ -36,326 +36,110 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <!-- css -->
 </head>
+<div class="loader-wrapper">
+    <div class="loader"></div>
+</div>
 
 <body>
-    <div class="container d-lg-none d-flex px-0">
-        <div class="bg-purple p-splash-100 d-flex flex-column" style="min-height: 100vh;">
-            <div class="row ">
-                <a href="4-location.html" class="text-decoration-none d-flex align-items-center gap-2">
-                    <i class="fa-solid fa-arrow-left"></i>
-                    <p key="4" class=" m-0 p-0 text-decoration-none" href="4-location.html"></p>
-                </a>
-                <div>
-                    <div class="mt-4">
-                        <span class="m-0 p-0 fs-26 fw-500 text-green" key="48"></span>
-                        <span class="m-0 p-0 fs-26 fw-500 mt-3" key="49"></span>
-                    </div>
-                    <div class="m-0 p-0 mt-3">
-                        <span key="50" class="fs-14 fw-400 text-green"></span>
-                        <span key="51" class="fs-14 fw-400"></span>
-                        <span key="52" class="fs-14 fw-400 text-green"></span>
-                        <span key="53" class="fs-14 fw-400"></span>
-                    </div>
-                    <div class="mt-4">
-                        <div class="accordion-company-select-two">
-                            <div class="accordion " id="accordionExample">
-                                <div class="accordion-item my-2">
-                                    <h2 class="accordion-header">
-                                        <button key="47" class="accordion-button fs-14 fw-500" type="button"
-                                            data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
-                                            aria-controls="collapseOne">
-                                        </button>
-                                    </h2>
-                                    <div id="collapseOne" class="accordion-collapse collapse show"
-                                        data-bs-parent="#accordionExample">
-                                        <div class="accordion-body">
-                                            <div class="checkin">
-                                                <div class="mb-3 form-check d-flex  
-                                                check-border align-items-center justify-content-between p-0">
-                                                    <label class="form-check-label fs-12 fw-400" for="flexCheckDefault">
-                                                        Metal
-                                                    </label>
-                                                    <input class="form-check-input" type="checkbox" value=""
-                                                        id="flexCheckDefault">
-                                                </div>
-                                                <div class="mb-3 form-check d-flex  
-                                                check-border align-items-center justify-content-between p-0">
-                                                    <label class="form-check-label fs-12 fw-400"
-                                                        for="flexCheckDefault1">
-                                                        Metal
-                                                    </label>
-                                                    <input class="form-check-input" type="checkbox" value=""
-                                                        id="flexCheckDefault1">
-                                                </div>
+
+    <div class="d-flex px-0 container position-relative">
+        <div class="bg-purple p-splash">
+            <div class="text-center fw-700 "> STEP GELECEK</div>
+
+            <!-- BACK BUTTON -->
+            <a href="12-company-type-selection.html"
+                class="fs-16 fw-500 text-decoration-none d-flex align-items-center gap-1 text-dark-gray">
+                <i class="fa-solid fa-arrow-left"></i>
+                Geri Dön</a>
+            <!-- BACK BUTTON -->
+
+            <!-- IMAGE & TEXT -->
+            <div class="image-text-content">
+
+                <span class="m-0 p-0 fs-26 fw-500 text-start mb-3 text-green" key="48"></span>
+                <span class="m-0 p-0 fs-26 fw-500 text-start" key="49"></span>
+                <div class="mt-2">
+                    <span class="m-0 p-0 fs-14 fw-400 text-green" key="50"></span>
+                    <span class="m-0 p-0 fs-14 fw-400" key="51"></span>
+                    <span class="m-0 p-0 fs-14 fw-400 text-green" key="52"></span>
+                    <span class="m-0 p-0 fs-14 fw-400" key="53"></span>
+                </div>
+                <div class="mt-4 accordion-content z-2 ">
+                    <div class="accordion-company-select">
+                        <!-- acordion content -->
+                        <div class="accordion" id="accordionExample">
+                            <div class="accordion-item my-2">
+                                <h2 class="accordion-header">
+                                    <button key="47" class="accordion-button fs-14 fw-500" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                                        aria-controls="collapseOne">
+
+                                    </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse show"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <div class="checkin">
+                                            <!-- Tümünü Seç -->
+                                            <div
+                                                class="mb-3 form-check d-flex check-border align-items-center justify-content-between p-0">
+                                                <label class="form-check-label fs-12 fw-400" for="select-all">
+                                                    Tümünü Seç
+                                                </label>
+                                                <input class="form-check-input" type="checkbox" id="select-all">
                                             </div>
-
-                                        </div>
-                                    </div>
-                                </div>
-
-
-
-                            </div>
-
-                            <div class="accordion " id="accordionExample1">
-                                <div class="accordion-item my-2">
-                                    <h2 class="accordion-header">
-                                        <button key="47" class="accordion-button fs-14 fw-500 collapsed" type="button"
-                                            data-bs-toggle="collapse" data-bs-target="#collapseTwo"
-                                            aria-expanded="false" aria-controls="collapseTwo">
-                                            Accordion Başlığı
-                                        </button>
-                                    </h2>
-                                    <div id="collapseTwo" class="accordion-collapse collapse"
-                                        data-bs-parent="#accordionExample1">
-                                        <div class="accordion-body">
-                                            <div class="checkin">
-                                                <div
-                                                    class="mb-3 form-check d-flex check-border align-items-center justify-content-between p-0">
-                                                    <label class="form-check-label fs-12 fw-400" for="flexCheckDefault">
-                                                        Metal
-                                                    </label>
-                                                    <input class="form-check-input" type="checkbox" value=""
-                                                        id="flexCheckDefault">
-                                                </div>
-                                                <div
-                                                    class="mb-3 form-check d-flex check-border align-items-center justify-content-between p-0">
-                                                    <label class="form-check-label fs-12 fw-400"
-                                                        for="flexCheckDefault1">
-                                                        Metal
-                                                    </label>
-                                                    <input class="form-check-input" type="checkbox" value=""
-                                                        id="flexCheckDefault1">
-                                                </div>
+                                            <!-- Checkbox 1 -->
+                                            <div
+                                                class="mb-3 form-check d-flex check-border align-items-center justify-content-between p-0">
+                                                <label class="form-check-label fs-12 fw-400" for="item-1">
+                                                    Metal
+                                                </label>
+                                                <input class="form-check-input" type="checkbox" id="item-1">
                                             </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                                            <!-- Checkbox 1 -->
 
-                            <div class="accordion " id="accordionExample2">
-                                <div class="accordion-item my-2">
-                                    <h2 class="accordion-header">
-                                        <button key="47" class="accordion-button fs-14 fw-500 collapsed" type="button"
-                                            data-bs-toggle="collapse" data-bs-target="#collapseThree"
-                                            aria-expanded="false" aria-controls="collapseThree">
-                                            Accordion Başlığı
-                                        </button>
-                                    </h2>
-                                    <div id="collapseThree" class="accordion-collapse collapse"
-                                        data-bs-parent="#accordionExample2">
-                                        <div class="accordion-body">
-                                            <div class="checkin">
-                                                <div
-                                                    class="mb-3 form-check d-flex check-border align-items-center justify-content-between p-0">
-                                                    <label class="form-check-label fs-12 fw-400" for="flexCheckDefault">
-                                                        Metal
-                                                    </label>
-                                                    <input class="form-check-input" type="checkbox" value=""
-                                                        id="flexCheckDefault">
-                                                </div>
-                                                <div
-                                                    class="mb-3 form-check d-flex check-border align-items-center justify-content-between p-0">
-                                                    <label class="form-check-label fs-12 fw-400"
-                                                        for="flexCheckDefault1">
-                                                        Metal
-                                                    </label>
-                                                    <input class="form-check-input" type="checkbox" value=""
-                                                        id="flexCheckDefault1">
-                                                </div>
+                                            <!-- Checkbox 2 -->
+                                            <div
+                                                class="mb-3 form-check d-flex check-border align-items-center justify-content-between p-0">
+                                                <label class="form-check-label fs-12 fw-400" for="item-2">
+                                                    Plastik
+                                                </label>
+                                                <input class="form-check-input" type="checkbox" id="item-2">
                                             </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="accordion " id="accordionExample3">
-                                <div class="accordion-item my-2">
-                                    <h2 class="accordion-header">
-                                        <button key="47" class="accordion-button fs-14 fw-500 collapsed" type="button"
-                                            data-bs-toggle="collapse" data-bs-target="#collapseFour"
-                                            aria-expanded="false" aria-controls="collapseFour">
-                                            Accordion Başlığı
-                                        </button>
-                                    </h2>
-                                    <div id="collapseFour" class="accordion-collapse collapse"
-                                        data-bs-parent="#accordionExample3">
-                                        <div class="accordion-body">
-                                            <div class="checkin">
-                                                <div
-                                                    class="mb-3 form-check d-flex check-border align-items-center justify-content-between p-0">
-                                                    <label class="form-check-label fs-12 fw-400" for="flexCheckDefault">
-                                                        Metal
-                                                    </label>
-                                                    <input class="form-check-input" type="checkbox" value=""
-                                                        id="flexCheckDefault">
-                                                </div>
-                                                <div
-                                                    class="mb-3 form-check d-flex check-border align-items-center justify-content-between p-0">
-                                                    <label class="form-check-label fs-12 fw-400"
-                                                        for="flexCheckDefault1">
-                                                        Metal
-                                                    </label>
-                                                    <input class="form-check-input" type="checkbox" value=""
-                                                        id="flexCheckDefault1">
-                                                </div>
+                                            <!-- Checkbox 2 -->
+                                            <!-- Checkbox 3 -->
+                                            <div
+                                                class="mb-3 form-check d-flex check-border align-items-center justify-content-between p-0">
+                                                <label class="form-check-label fs-12 fw-400" for="item-3">
+                                                    Demir
+                                                </label>
+                                                <input class="form-check-input" type="checkbox" id="item-3">
                                             </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="accordion " id="accordionExample4">
-                                <div class="accordion-item my-2">
-                                    <h2 class="accordion-header">
-                                        <button key="47" class="accordion-button fs-14 fw-500 collapsed" type="button"
-                                            data-bs-toggle="collapse" data-bs-target="#collapseFive"
-                                            aria-expanded="false" aria-controls="collapseFive">
-                                            Accordion Başlığı
-                                        </button>
-                                    </h2>
-                                    <div id="collapseFive" class="accordion-collapse collapse"
-                                        data-bs-parent="#accordionExample4">
-                                        <div class="accordion-body">
-                                            <div class="checkin">
-                                                <div
-                                                    class="mb-3 form-check d-flex check-border align-items-center justify-content-between p-0">
-                                                    <label class="form-check-label fs-12 fw-400" for="flexCheckDefault">
-                                                        Metal
-                                                    </label>
-                                                    <input class="form-check-input" type="checkbox" value=""
-                                                        id="flexCheckDefault">
-                                                </div>
-                                                <div
-                                                    class="mb-3 form-check d-flex check-border align-items-center justify-content-between p-0">
-                                                    <label class="form-check-label fs-12 fw-400"
-                                                        for="flexCheckDefault1">
-                                                        Metal
-                                                    </label>
-                                                    <input class="form-check-input" type="checkbox" value=""
-                                                        id="flexCheckDefault1">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="accordion " id="accordionExample5">
-                                <div class="accordion-item my-2">
-                                    <h2 class="accordion-header">
-                                        <button key="47" class="accordion-button fs-14 fw-500 collapsed" type="button"
-                                            data-bs-toggle="collapse" data-bs-target="#collapseSix"
-                                            aria-expanded="false" aria-controls="collapseSix">
-                                            Accordion Başlığı
-                                        </button>
-                                    </h2>
-                                    <div id="collapseSix" class="accordion-collapse collapse"
-                                        data-bs-parent="#accordionExample5">
-                                        <div class="accordion-body">
-                                            <div class="checkin">
-                                                <div
-                                                    class="mb-3 form-check d-flex check-border align-items-center justify-content-between p-0">
-                                                    <label class="form-check-label fs-12 fw-400" for="flexCheckDefault">
-                                                        Metal
-                                                    </label>
-                                                    <input class="form-check-input" type="checkbox" value=""
-                                                        id="flexCheckDefault">
-                                                </div>
-                                                <div
-                                                    class="mb-3 form-check d-flex check-border align-items-center justify-content-between p-0">
-                                                    <label class="form-check-label fs-12 fw-400"
-                                                        for="flexCheckDefault1">
-                                                        Metal
-                                                    </label>
-                                                    <input class="form-check-input" type="checkbox" value=""
-                                                        id="flexCheckDefault1">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="accordion " id="accordionExample6">
-                                <div class="accordion-item my-2">
-                                    <h2 class="accordion-header">
-                                        <button key="47" class="accordion-button fs-14 fw-500 collapsed" type="button"
-                                            data-bs-toggle="collapse" data-bs-target="#collapseSeven"
-                                            aria-expanded="false" aria-controls="collapseSeven">
-                                            Accordion Başlığı
-                                        </button>
-                                    </h2>
-                                    <div id="collapseSeven" class="accordion-collapse collapse"
-                                        data-bs-parent="#accordionExample6">
-                                        <div class="accordion-body">
-                                            <div class="checkin">
-                                                <div
-                                                    class="mb-3 form-check d-flex check-border align-items-center justify-content-between p-0">
-                                                    <label class="form-check-label fs-12 fw-400" for="flexCheckDefault">
-                                                        Metal
-                                                    </label>
-                                                    <input class="form-check-input" type="checkbox" value=""
-                                                        id="flexCheckDefault">
-                                                </div>
-                                                <div
-                                                    class="mb-3 form-check d-flex check-border align-items-center justify-content-between p-0">
-                                                    <label class="form-check-label fs-12 fw-400"
-                                                        for="flexCheckDefault1">
-                                                        Metal
-                                                    </label>
-                                                    <input class="form-check-input" type="checkbox" value=""
-                                                        id="flexCheckDefault1">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="accordion " id="accordionExample7">
-                                <div class="accordion-item my-2">
-                                    <h2 class="accordion-header">
-                                        <button key="47" class="accordion-button fs-14 fw-500 collapsed" type="button"
-                                            data-bs-toggle="collapse" data-bs-target="#collapseEight"
-                                            aria-expanded="false" aria-controls="collapseEight">
-                                            Accordion Başlığı
-                                        </button>
-                                    </h2>
-                                    <div id="collapseEight" class="accordion-collapse collapse"
-                                        data-bs-parent="#accordionExample7">
-                                        <div class="accordion-body">
-                                            <div class="checkin">
-                                                <div
-                                                    class="mb-3 form-check d-flex check-border align-items-center justify-content-between p-0">
-                                                    <label class="form-check-label fs-12 fw-400" for="flexCheckDefault">
-                                                        Metal
-                                                    </label>
-                                                    <input class="form-check-input" type="checkbox" value=""
-                                                        id="flexCheckDefault">
-                                                </div>
-                                                <div
-                                                    class="mb-3 form-check d-flex check-border align-items-center justify-content-between p-0">
-                                                    <label class="form-check-label fs-12 fw-400"
-                                                        for="flexCheckDefault1">
-                                                        Metal
-                                                    </label>
-                                                    <input class="form-check-input" type="checkbox" value=""
-                                                        id="flexCheckDefault1">
-                                                </div>
-                                            </div>
+                                            <!-- Checkbox 3-->
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-
+                        <!-- acordion content -->
                     </div>
-                    <a href="15-homepage.html" key="40" class="mt-5 border-0 purple-button"
-                        style="position: relative; bottom: 30px;" type="submit"></a>
-                </div>
 
+                </div>
             </div>
+            <!-- IMAGE & TEXT -->
+
+            <!-- SWITCH BUTTON -->
+            <div class="position-relative">
+                <div class="position-absolute w-100" style="bottom: -310px;">
+                    <div class="splash-buttons mt-5 z-3  w-100">
+
+                        <a href="15-homepage.html" class="w-100 text-decoration-none purple-button btn border-0 mt-4"
+                            key="6"></a>
+                    </div>
+                </div>
+            </div>
+            <!-- SWITCH BUTTON -->
+
 
 
         </div>
@@ -363,23 +147,34 @@
     </div>
 
     <script>
-        // PASSWORD HIDE & SHOW
-        document.querySelector('.toggle-password').addEventListener('click', function () {
-            const passwordInput = document.getElementById('exampleInputPassword1');
-            const icon = this;
+        document.addEventListener('DOMContentLoaded', function () {
+            const selectAllCheckbox = document.getElementById('select-all');
+            const checkboxes = document.querySelectorAll('.checkin .form-check-input:not(#select-all)');
 
-            if (passwordInput.type === 'password') {
-                passwordInput.type = 'text';
-                icon.classList.remove('fa-eye');
-                icon.classList.add('fa-eye-slash');
-            } else {
-                passwordInput.type = 'password';
-                icon.classList.remove('fa-eye-slash');
-                icon.classList.add('fa-eye');
-            }
+            selectAllCheckbox.addEventListener('change', function () {
+                const isChecked = this.checked;
+                checkboxes.forEach(checkbox => {
+                    checkbox.checked = isChecked;
+                });
+            });
+
+            checkboxes.forEach(checkbox => {
+                checkbox.addEventListener('change', function () {
+                    const allChecked = Array.from(checkboxes).every(cb => cb.checked);
+                    const noneChecked = Array.from(checkboxes).every(cb => !cb.checked);
+
+                    if (allChecked) {
+                        selectAllCheckbox.checked = true;
+                    } else if (noneChecked) {
+                        selectAllCheckbox.checked = false;
+                    } else {
+                        selectAllCheckbox.checked = false;
+                    }
+                });
+            });
         });
-    </script>
 
+    </script>
     <!-- jquery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
         integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="

@@ -1,3 +1,93 @@
+document.addEventListener("DOMContentLoaded", (event) => {
+  setTimeout(() => {
+    console.log("1");
+    if ($(".loader-wrapper")) {
+      $(".loader-wrapper").hide();
+    }
+  }, 250);
+
+  setTimeout(() => {
+    // if ($(".page-wrapper p")) {
+    //   gsap.fromTo(
+    //     ".page-wrapper p",
+    //     {
+    //       opacity: 0,
+    //       y: 30,
+    //     },
+    //     {
+    //       y: 0,
+    //       opacity: 1,
+    //       stagger: 0.1,
+
+    //       scrollTrigger: {
+    //         trigger: ".page-wrapper",
+    //         start: "top top",
+    //       },
+    //     }
+    //   );
+    // }
+
+    // if ($(".splash-buttonsh a")) {
+    //   gsap.fromTo(
+    //     ".splash-buttonsh a",
+    //     {
+    //       opacity: 0,
+    //       y: 30,
+    //     },
+    //     {
+    //       y: 0,
+    //       opacity: 1,
+    //       stagger: 0.1,
+
+    //       scrollTrigger: {
+    //         trigger: ".splash-buttons",
+    //         start: "top top",
+    //       },
+    //     }
+    //   );
+    // }
+    if ($(".animate-1")) {
+      gsap.fromTo(
+        ".animate-1",
+        {
+          opacity: 0,
+          y: 30,
+        },
+        {
+          y: 0,
+          opacity: 1,
+          stagger: 0.1,
+
+          scrollTrigger: {
+            trigger: ".animate-1",
+            start: "top top",
+          },
+        }
+      );
+    }
+
+    if ($(".animate")) {
+      gsap.fromTo(
+        ".animate",
+        {
+          opacity: 0,
+          y: 30,
+        },
+        {
+          y: 0,
+          opacity: 1,
+          stagger: 0.1,
+
+          scrollTrigger: {
+            trigger: ".animate",
+            start: "top bottom",
+          },
+        }
+      );
+    }
+  }, 300);
+});
+
 // LANGUAGE SETTING
 $(document).ready(function () {
   var arrLang = {
@@ -153,4 +243,50 @@ if (darkmode === "active") enableDarkmode();
 themeSwitch.addEventListener("click", () => {
   darkmode = localStorage.getItem("darkmode");
   darkmode !== "active" ? enableDarkmode() : disableDarkmode();
+});
+if (localStorage.getItem("darkmode") === "active") {
+  document.documentElement.classList.add("darkmode");
+}
+
+const buttons = document.querySelectorAll(".purple-button");
+
+buttons.forEach((button) => {
+  button.addEventListener("click", function (event) {
+    event.preventDefault();
+    const targetPage = button.getAttribute("href");
+    console.log(`Sayfa yenilenmeden ${targetPage} sayfasına geçiliyor!`);
+
+    setTimeout(() => {
+      window.location.href = targetPage;
+    }, 1000);
+  });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  const selectAllCheckbox = document.getElementById("select-all");
+  const checkboxes = document.querySelectorAll(
+    ".checkin .form-check-input:not(#select-all)"
+  );
+
+  selectAllCheckbox.addEventListener("change", function () {
+    const isChecked = this.checked;
+    checkboxes.forEach((checkbox) => {
+      checkbox.checked = isChecked;
+    });
+  });
+
+  checkboxes.forEach((checkbox) => {
+    checkbox.addEventListener("change", function () {
+      const allChecked = Array.from(checkboxes).every((cb) => cb.checked);
+      const noneChecked = Array.from(checkboxes).every((cb) => !cb.checked);
+
+      if (allChecked) {
+        selectAllCheckbox.checked = true;
+      } else if (noneChecked) {
+        selectAllCheckbox.checked = false;
+      } else {
+        selectAllCheckbox.checked = false;
+      }
+    });
+  });
 });

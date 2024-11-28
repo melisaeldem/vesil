@@ -1,0 +1,17 @@
+:root {
+  --primary-color: #E9631C;
+  --soft-primary: #e9631c80;
+  --primary-hover-color: #4c3670;
+  --primary-green-color: #3caa94;
+  --primary-green-soft-color: #3caa949a;
+  --black: #333;
+  --white: #fff;
+  --red: #b94a48;
+  --soft-red: rgba(185, 74, 72, 0.19);
+  --green: #468847;
+  --soft-green: #effaf3;
+  --gray: #8e8e93;
+  --accordion-bg: #fdfdfd;
+  --filter-border: #e8e8e8;
+  --text-dark-gray: rgba(51, 51, 51, 0.8);
+}/*# sourceMappingURL=color.css.map */

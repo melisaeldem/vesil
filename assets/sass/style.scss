@@ -1,5 +1,5 @@
 @import "../sass/color.scss";
-
+@import "../sass/main.scss";
 body,
 html {
   transition: background-color 0.3s ease, color 0.3s ease;
@@ -11,10 +11,10 @@ html {
 a {
   color: var(--black);
 }
-.darkmode {
-  font-family: "Poppins", sans-serif;
+html.darkmode,
+body.darkmode {
   background-color: var(--black);
-  color: var(--white) !important;
+  color: var(--white);
 }
 .darkmode a {
   color: var(--white) !important;
@@ -161,6 +161,9 @@ a {
 .text-gray {
   color: var(--gray);
 }
+.text-dark-gray {
+  color: var(--text-dark-gray);
+}
 .text-danger {
   color: var(--red) !important;
 }
@@ -220,16 +223,19 @@ a {
 }
 
 .bg-purple {
-  background-image: url("../img/bg2.png");
+  background-image: url("../img/bg2.png") !important;
   background-size: cover;
   background-position: center;
   width: 100%;
   height: 100vh;
   background-position: center;
 }
+.darkmode .bg-purple {
+  background-image: none !important;
+}
 
 .p-splash {
-  padding: 140px 40px !important;
+  padding: 30px 40px !important;
 }
 .p-splash-mode {
   padding: 0px 40px 20px !important;
@@ -242,18 +248,20 @@ a {
 }
 #theme-switch {
   display: flex;
-  width: 100%;
-  max-width: 100%;
-  padding: 16px 24px;
+  width: 163.377px;
+  height: 66px;
   color: var(--white);
   text-decoration: none;
   justify-content: center;
   align-items: center;
   gap: 8px;
-  border-radius: var(--Radius-L, 16px);
-  background-color: #0000001e;
+  border-radius: 100px;
+  border: none;
+  background-color: rgba(141, 153, 174, 0.5);
   cursor: pointer;
-
+  &:focus {
+    box-shadow: none;
+  }
   svg {
     fill: var(--white);
   }
@@ -272,6 +280,9 @@ svg {
 }
 .darkmode .text-purple {
   color: var(--white);
+}
+.filter-text {
+  color: var(--gray);
 }
 .darkmode .filter-text {
   color: var(--white);
@@ -296,9 +307,11 @@ svg {
   transform: translateY(-50%);
   cursor: pointer;
 }
-.accordion-company-select-two {
-  height: 500px;
-  overflow: auto;
+.accordion-content {
+  max-width: 100%;
+  max-width: 100%;
+  height: 550px;
+  overflow: auto !important;
   scrollbar-width: none;
   -ms-overflow-style: none;
   ::-webkit-scrollbar {
@@ -423,16 +436,16 @@ svg {
 }
 .nav-link-homepage .nav-tabs .nav-item.show .nav-link,
 .nav-tabs .nav-link.active {
-  border: none;
+  border: none !;
   border-bottom: 2px solid var(--primary-color);
   background-color: transparent !important;
   color: var(--black) !important;
 }
 
-.darkmode .nav-link-homepage .nav-tabs .nav-item.show .nav-link,
-.nav-tabs .nav-link.active {
-  // color: var(--white) !important;
-}
+// .darkmode .nav-link-homepage .nav-tabs .nav-item.show .nav-link,
+// .nav-tabs .nav-link.active {
+//   // color: var(--white) !important;
+// }
 .nav-tabs-homepage .nav-link:focus {
   border: none !important;
   border-bottom: 2px solid var(--primary-color) !important;
@@ -441,11 +454,11 @@ svg {
   border: none !important;
   color: var(--gray);
 }
-.filter-serach {
+.filter-search {
   padding-bottom: 10px;
   border-bottom: 1px solid var(--filter-border) !important;
 }
-.product-type-filter{
+.product-type-filter {
   padding-bottom: 10px;
   border-top: 1px solid var(--filter-border) !important;
 }
@@ -555,3 +568,48 @@ svg {
   border-bottom: 1px solid var(--filter-border);
   padding-bottom: 10px;
 }
+.image-text-content {
+  max-width: 100%;
+  max-width: 100%;
+  width: 365px !important;
+  height: 460px !important;
+  padding-top: 55px;
+}
+
+.splash-buttons {
+  padding-top: 140px;
+}
+.register-buttons {
+  padding-top: 130px;
+}
+.register-form {
+  input,
+  label {
+    &::placeholder {
+      color: var(--Grays-Gray, var(--Grays-Gray, #8e8e93));
+      font-family: Poppins;
+      font-size: 12px;
+      font-weight: 400;
+    }
+  }
+}
+
+
+@media (min-width: 710px) {
+  .bg-purple {
+    background-image: none;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+  }
+  .image-text-content {
+    max-width: 100%;
+    max-width: 100%;
+    width: 100% !important;
+    height: 460px !important;
+    padding-top: 55px;
+  }
+}
+

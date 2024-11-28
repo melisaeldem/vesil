@@ -37,39 +37,59 @@
     <!-- css -->
 </head>
 
+<div class="loader-wrapper">
+    <div class="loader"></div>
+</div>
+
 <body>
-
-    <div class="container d-lg-none d-flex px-0">
-        <div class="bg-purple p-splash d-flex flex-column" style="min-height: 100vh;">
-            <div class="row flex-grow-1">
-                <div class="col-12 text-center">
-                    <img src="./assets/img/hands.svg" alt="brand" class="img-fluid">
-                    <p class="m-0 p-0 fw-500 fs-26 mt-50">Vesil’e Hoş Geldiniz</p>
-                    <p class="m-0 p-0 fs-14 fw-400 mt-20">
-                        Uygulamamızı size uygun özelleştirebilmemiz ve ortak pazarımızdan en iyi şekilde
-                        yararlanabilmeniz için devam ediniz.
-                    </p>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-12 ">
-                    <a href="2-language.html" class="purple-button text-center">
-                        Devam Et
-                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26"
-                            fill="currentColor">
-                            <path
-                                d="M20.1708 13.9209C20.4143 13.6763 20.551 13.3452 20.551 13C20.551 12.6549 20.4143 12.3238 20.1708 12.0792L14.9625 6.87086C14.8416 6.74994 14.698 6.65401 14.54 6.58857C14.382 6.52312 14.2127 6.48944 14.0417 6.48944C13.6963 6.48944 13.365 6.62664 13.1208 6.87086C12.8766 7.11508 12.7394 7.44632 12.7394 7.7917C12.7394 8.13708 12.8766 8.46831 13.1208 8.71253L16.1062 11.6979H6.74999C6.40466 11.6979 6.07346 11.8351 5.82928 12.0793C5.58509 12.3235 5.44791 12.6547 5.44791 13C5.44791 13.3454 5.58509 13.6766 5.82928 13.9207C6.07346 14.1649 6.40466 14.3021 6.74999 14.3021H16.1062L13.1208 17.2875C12.9999 17.4085 12.904 17.552 12.8385 17.71C12.7731 17.868 12.7394 18.0373 12.7394 18.2084C12.7394 18.3794 12.7731 18.5487 12.8385 18.7067C12.904 18.8647 12.9999 19.0083 13.1208 19.1292C13.2417 19.2501 13.3853 19.346 13.5433 19.4115C13.7013 19.4769 13.8706 19.5106 14.0417 19.5106C14.2127 19.5106 14.382 19.4769 14.54 19.4115C14.698 19.346 14.8416 19.2501 14.9625 19.1292L20.1708 13.9209Z"
-                                fill="currentColor" />
-                        </svg>
-                    </a>
-                </div>
-            </div>
-        </div>
+    <div class="load-container">
+        <div class="loading-screen"></div>
     </div>
 
+    <main data-barba="container" data-barba-namespace="welcome-section">
+
+        <div class="d-flex px-0 container custom-container  ">
+            <!-- BACK BUTTON -->
+            <a href="2-language.html"
+                class="invisible back-button fs-16 fw-500 text-decoration-none d-flex align-items-center gap-1 text-dark-gray">
+                <i class="fa-solid fa-arrow-left"></i>
+                Geri Dön</a>
+            <!-- BACK BUTTON -->
+            <div class="bg-purple p-splash page-wrapper ">
+
+                <!-- IMAGE & TEXT -->
+                <div class="image-text-contenth">
+                    <div class="d-flex align-items-center justify-content-center mb-5">
+                        <img src="./assets/img/giff.gif" alt="" class="img-fluid animate-1 ">
+                    </div>
+                    <p class="m-0 p-0 fs-26 fw-500 text-center mb-3 animate ">Vesil'e Hoş Geldiniz</p>
+                    <p class="m-0 p-0 fs-14 fw-400 text-center animate">Uygulamamızı size uygun özelleştirebilmemiz ve
+                        ortak
+                        pazarımızdan en iyi şekilde yararlanabilmeniz için devam ediniz.</p>
+                </div>
+                <!-- IMAGE & TEXT -->
+
+                <!-- SWITCH BUTTON -->
+                <div class="splash-buttonsh animate">
+                    <div>
+                        <a href="2-language.html" class=" purple-button text-center">
+                            Devam Et<svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26"
+                                fill="none">
+                                <path
+                                    d="M20.1708 13.9209C20.4143 13.6763 20.551 13.3452 20.551 13C20.551 12.6549 20.4143 12.3238 20.1708 12.0792L14.9625 6.87086C14.8416 6.74994 14.698 6.65401 14.54 6.58857C14.382 6.52312 14.2127 6.48944 14.0417 6.48944C13.6963 6.48944 13.365 6.62664 13.1208 6.87086C12.8766 7.11508 12.7394 7.44632 12.7394 7.7917C12.7394 8.13708 12.8766 8.46831 13.1208 8.71253L16.1062 11.6979H6.74999C6.40466 11.6979 6.07346 11.8351 5.82928 12.0793C5.58509 12.3235 5.44791 12.6547 5.44791 13C5.44791 13.3454 5.58509 13.6766 5.82928 13.9207C6.07346 14.1649 6.40466 14.3021 6.74999 14.3021H16.1062L13.1208 17.2875C12.9999 17.4085 12.904 17.552 12.8385 17.71C12.7731 17.868 12.7394 18.0373 12.7394 18.2084C12.7394 18.3794 12.7731 18.5487 12.8385 18.7067C12.904 18.8647 12.9999 19.0083 13.1208 19.1292C13.2417 19.2501 13.3853 19.346 13.5433 19.4115C13.7013 19.4769 13.8706 19.5106 14.0417 19.5106C14.2127 19.5106 14.382 19.4769 14.54 19.4115C14.698 19.346 14.8416 19.2501 14.9625 19.1292L20.1708 13.9209Z"
+                                    fill="white" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <!-- SWITCH BUTTON -->
 
 
+            </div>
+        </div>
+
+
+    </main>
     <!-- jquery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
         integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
@@ -80,14 +100,21 @@
         integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- owl -->
-    <script src="https://cdn.jsdelivr.net/npm/i18next@21.6.3/i18next.min.js"></script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/i18next/21.8.6/i18next.min.js"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/i18next-browser-languagedetector/6.0.1/i18nextBrowserLanguageDetector.min.js"></script>
     <!-- main js -->
     <script src="assets/js/app.js"></script>
     <!-- main js -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://unpkg.com/@barba/core"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
+
+
+
 </body>
 
 </html>
